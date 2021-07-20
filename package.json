@@ -1,16 +1,30 @@
 {
-    "name": "management",
-    "version": "1.0.0",
-    "scripts": {
-        "client": "cd client %% yarn start",
-        "server": "nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
-    },
-    "dependencies": {
-        "express": "^4.17.1"
-    },
-    "devDependencies": {
-        "concurrently": "^6.2.0",
-        "nodemon": "^2.0.12"
-    }
+  "name": "management",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hynaga/React-Management-Tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hynaga/React-Management-Tutorial/issues"
+  },
+  "homepage": "https://github.com/hynaga/React-Management-Tutorial#readme",
+  "description": ""
 }
